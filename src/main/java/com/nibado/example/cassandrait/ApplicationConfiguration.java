@@ -11,11 +11,15 @@ import org.springframework.context.annotation.Configuration;
 public class ApplicationConfiguration {
     @Bean
     public Session createSession() {
-        log.info("ApplicationConfiguration.createSession");
+        return createSession("127.0.0.1", 9042);
+    }
+
+    public static Session createSession(String ip, int port) {
         Cluster cluster;
 
         cluster = Cluster.builder()
-                .addContactPoint("127.0.0.1")
+                .addContactPoint(ip)
+                .withPort(port)
                 .build();
 
         Session session = cluster.connect();

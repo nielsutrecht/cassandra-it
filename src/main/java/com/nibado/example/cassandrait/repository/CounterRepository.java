@@ -1,4 +1,4 @@
-package com.nibado.example.cassandrait.base;
+package com.nibado.example.cassandrait.repository;
 
 import com.datastax.driver.core.PreparedStatement;
 import com.datastax.driver.core.Session;
@@ -7,7 +7,6 @@ import com.datastax.driver.mapping.MappingManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import javax.annotation.PostConstruct;
 import java.util.Optional;
 
 @Repository
@@ -29,12 +28,5 @@ public class CounterRepository {
 
     public Optional<Counter> get(final String key) {
         return Optional.ofNullable(mapper.get(key));
-    }
-
-    @PostConstruct
-    public void initTable() {
-
-
-
     }
 }

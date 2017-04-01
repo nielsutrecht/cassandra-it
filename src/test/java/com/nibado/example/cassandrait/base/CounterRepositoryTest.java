@@ -1,6 +1,7 @@
 package com.nibado.example.cassandrait.base;
 
 import com.datastax.driver.core.Session;
+import com.nibado.example.cassandrait.repository.CounterRepository;
 import org.junit.Before;
 import org.junit.Test;
 

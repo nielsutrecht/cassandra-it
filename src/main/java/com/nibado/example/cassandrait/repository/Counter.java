@@ -1,4 +1,4 @@
-package com.nibado.example.cassandrait.base;
+package com.nibado.example.cassandrait.repository;
 
 import com.datastax.driver.mapping.annotations.Column;
 import com.datastax.driver.mapping.annotations.PartitionKey;

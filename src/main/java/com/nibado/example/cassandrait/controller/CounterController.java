@@ -1,6 +1,6 @@
 package com.nibado.example.cassandrait.controller;
 
-import com.nibado.example.cassandrait.base.CounterRepository;
+import com.nibado.example.cassandrait.repository.CounterRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
