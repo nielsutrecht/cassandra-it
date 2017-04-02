@@ -9,7 +9,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public abstract class CounterRepositoryTest {
     private Session session;
-
     protected CounterRepository repository;
 
     public abstract Session getSession();

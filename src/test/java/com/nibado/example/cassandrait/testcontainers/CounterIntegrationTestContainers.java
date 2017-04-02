@@ -18,7 +18,7 @@ import org.testcontainers.containers.GenericContainer;
 @ActiveProfiles("test")
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
-@SpringBootTest(classes = {ExampleApplication.class, TestConfigurationTestContainers.class})
+@SpringBootTest(classes = {ExampleApplication.class})
 @ContextConfiguration(initializers = CounterIntegrationTestContainers.Initializer.class)
 @EnableConfigurationProperties
 public class CounterIntegrationTestContainers extends CounterIntegrationTest {
